@@ -1,2 +1,4 @@
-# Woodzone_01-05-23
-Learn how to create a fully responsive and SEO-friendly furniture shop website using HTML and CSS with our step-by-step guide.
+#LUZO E-commerce website
+This is the front-end for the luzo website for furniture used css,Html and javascript
+
+![image](https://github.com/user-attachments/assets/a3f19483-cab9-43ab-948c-9fa644c8b041)
