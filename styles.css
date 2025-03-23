@@ -44,7 +44,7 @@ a {
 
 img {
   width: 100%;
-  border-radius: 15px; /* Soft curved edges */
+  border-radius: 15px; 
 }
 
 body {
@@ -62,7 +62,7 @@ body {
 
 .logo__header img {
   max-width: 150px;
-  border-radius: 10px; /* Soft edges for logos */
+  border-radius: 10px; 
 }
 
 .contact__us {
@@ -84,35 +84,7 @@ body {
 .contact__us i {
   font-size: 1rem;
 }
-/* .nav__links a {
-  font-size: 0.9rem;
-  color: var(--white);
-  text-decoration: none;
-  position: relative;
-  transition: color 0.3s;
-  padding-bottom: 5px;  Space for the underline 
-}
 
-.nav__links a::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 0%;
-  height: 2px;
-  background-color: var(--secondary-color);
-  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
-}
-
-.nav__links a:hover {
-  color: var(--secondary-color);
-}
-
-.nav__links a:hover::after {
-  width: 100%;
-  left: 0;
-}
-*/
 nav {
   background-color: var(--primary-color);
 }
@@ -132,8 +104,6 @@ nav {
   color: var(--white);
   transition: 0.3s;
 }
-
-.
 .nav__links i {
   font-size: 1.2rem;
 }
@@ -161,6 +131,60 @@ nav {
 .nav__links a:hover::after {
   width: 100%;
   left: 0;
+}
+
+
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__links span {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 800px; 
+  max-width: 90vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 10px;
+  overflow: auto; 
+
+.dropdown-content {
+  left: 0;
+}
+
+
+.dropdown-right .dropdown-content {
+  left: auto;
+  right: 0;
+
+
+.dropdown-columns {
+  columns: 5 150px; 
+  column-gap: 20px; 
+}
+
+.dropdown-columns a {
+  color: black;
+  padding: 8px;
+  text-decoration: none;
+  display: block;
+  break-inside: avoid;
+}
+
+
+.dropdown-columns a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 header {
@@ -425,7 +449,7 @@ footer {
 .footer__col img {
   max-width: 150px;
   margin-bottom: 2rem;
-  border-radius: 10px; /* Soft edges for logos */
+  border-radius: 10px; 
 
 }
 
