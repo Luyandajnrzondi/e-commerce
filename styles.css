@@ -535,3 +535,73 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/* Add this to your existing CSS */
+
+/* Mobile-specific styles */
+@media (width < 768px) {
+  /* Adjust the navigation links for mobile */
+  .nav__links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .nav__links span {
+    width: 100%;
+  }
+
+  /* Dropdown styles for mobile */
+  .dropdown-content {
+    position: static; /* Dropdowns will appear inline on mobile */
+    min-width: 100%; /* Full width */
+    max-width: 100%; /* Full width */
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0;
+    display: none; /* Hide dropdown by default */
+  }
+
+  .dropdown-columns {
+    columns: 1; /* Single column for mobile */
+    column-gap: 0;
+  }
+
+  .dropdown-columns a {
+    padding: 0.5rem 1rem;
+    color: var(--text-dark);
+    background-color: var(--white);
+    border-bottom: 1px solid #ddd;
+  }
+
+  .dropdown-columns a:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+
+  /* Show dropdown on click */
+  .dropdown.active .dropdown-content {
+    display: block;
+  }
+
+  /* Adjust the dropdown toggle for mobile */
+  .dropdown > a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 5px;
+  }
+
+  .dropdown > a::after {
+    content: "▼";
+    font-size: 0.8rem;
+    transition: transform 0.3s;
+  }
+
+  .dropdown.active > a::after {
+    transform: rotate(180deg);
+  }
+}
